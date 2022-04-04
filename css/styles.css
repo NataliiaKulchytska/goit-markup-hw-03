@@ -1,9 +1,4 @@
-:root {
-  --basic-title-color: #212121;
-  --base-text-color: #757575;
-  --white-color: #ffffff;
-  --blue-color: #2196f3;
-}
+@import "/css/_root.css";
 
 body {
   color: var(--basic-title-color);
