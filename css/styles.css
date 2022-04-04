@@ -1,0 +1,218 @@
+:root {
+  --basic-title-color: #212121;
+  --base-text-color: #757575;
+  --white-color: #ffffff;
+  --blue-color: #2196f3;
+}
+
+body {
+  color: var(--basic-title-color);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+  background: var(--white-color);
+}
+
+/* Логотип*/
+.logo,
+.logo-footer {
+  font-family: 'Raleway', sans-serif;
+  color: #000000;
+  text-decoration: none; 
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo-blue {
+  color: var(--blue-color);
+}
+
+/* Навигация */
+.navigator-list {
+  text-decoration: none;
+  list-style: none;
+}
+.navigator-list .link,
+.contact-link {
+  color: var(--basic-title-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+ }
+.link.studio {
+  color: var(--blue-color);
+}
+.link:hover,
+.link:focus{
+  color: var(--blue-color);
+}
+
+/*Контакты*/
+.contact-list{
+  list-style: none;
+}
+.contact-link {
+  color: var(--base-text-color);
+ }
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--blue-color);
+}
+
+/*Герой*/
+.hero{
+  color: var(--white-color);
+  background: #2F303A;
+  line-height: 1.36;    
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-title{
+  font-weight: 900;
+  font-size: 44px;
+}
+.hero-button{
+  font-family: inherit;
+  color: var(--white-color);
+  background-color: var(--blue-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  }
+.hero-button:hover,
+.hero-button:hover{
+  background-color: #188CE8;
+}
+
+/* Проекты*/
+.project-list{
+  list-style: none;
+}
+.project-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.project-text {
+  color: var(--base-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* Карточки проектов*/
+.project-cards-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.project-cards-list{
+  list-style: none;
+  }
+
+/*Команда*/
+.command {
+  background-color: #F5F4FA;
+}
+.command-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.command-list{
+  list-style: none;
+}
+.command-heading {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.command-text {
+  color: var(--base-text-color);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/*Footer*/
+.footer {
+  background-color: #2F303A;
+}
+.logo-footer {
+  color: var(--white-color);
+}
+
+/*Адрес*/
+.footer-list{
+  list-style: none;
+  font-style: normal;
+}
+.address-map,
+.address-link {
+  color: var(--white-color);
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+}
+.address-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+.address-link:hover,
+.address-link:focus{
+  color: var(--white-color);
+}
+
+/*Портфолио*/
+.link.portfolio {
+  color: var(--blue-color);
+}
+
+/* Кнопки в портфолио*/
+.portfolio-button-list{
+  list-style: none; 
+}
+.portfolio-button {
+  font-family: inherit;
+  color: var(--basic-title-color);
+  background-color: #F5F4FA;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  cursor: pointer;
+}
+.portfolio-button.one {
+  color: var(--white-color);
+  background-color: var(--blue-color);
+  }
+.portfolio-button:hover,
+.portfolio-button:focus {
+  color: var(--white-color);
+  background-color: var(--blue-color);
+}
+
+/* Проекты портфолио*/
+.portfolio-project-list{
+  list-style: none;
+}
+.portfolio-project-link{
+  text-decoration: none;
+}
+.portfolio-project-link .portfolio-project-title {
+  color: var(--basic-title-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-project-text {
+  color: var(--base-text-color);
+  font-size: 16px;
+  line-height: 1.88;
+}
