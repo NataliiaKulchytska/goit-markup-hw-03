@@ -8,14 +8,19 @@ body {
   background: var(--white-color);
   
 }
-h1,
+/*h1,
 h2,
 h3,
 ul,
-p{
-margin: 0 auto;
-}
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left:0;
+}*/
+/*.list {
+  padding-left: 0;
 
+}*/
 /*Контейнер*/
 .container {
   width: 1200px;
@@ -36,17 +41,19 @@ margin: 0 auto;
  }
 
 /*header*/
-.page-header{
+.nav-header{
   display: flex;
   align-items: center;
-  justify-content: space-between; 
   
   background-color: tomato;
 }
 
 /* Логотип*/
-.logo,
-.logo-footer {
+.logo{
+  
+  padding-top: 24px;
+  padding-bottom: 25px;
+
   font-family: 'Raleway', sans-serif;
   color: #000000;
   text-decoration: none; 
@@ -59,20 +66,24 @@ margin: 0 auto;
 .logo-blue {
   color: var(--blue-color);
 }
-.logo-footer {
-  color: var(--white-color);
-}
+
 
 /* Навигация */
-.nav{
 
-}
 .navigator-list {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  
   text-decoration: none;
   list-style: none;
-  display: flex;
+  
   }
 .navigator-list .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--basic-title-color);
   text-decoration: none;
   font-weight: 500;
@@ -90,15 +101,28 @@ margin: 0 auto;
 .link:focus{
   color: var(--blue-color);
 }
+.navigator-item:not(:last-child) {
+margin-right: 50px;
+}
 
 /*Контакты*/
-.contact-list{
+.contact-list {
   display: flex;
   align-items: center;
   
   list-style: none;
 }
+.contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+.contact-item:last-child{
+  margin-right: 0;
+}
 .contact-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--base-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -112,7 +136,7 @@ margin: 0 auto;
 }
 
 /*Герой*/
-.hero{
+.hero {
   color: var(--white-color);
   background: #2F303A;
   line-height: 1.36;    
@@ -120,12 +144,15 @@ margin: 0 auto;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.hero-title{
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   min-width: 696px;
   outline: 1px solid blue;
-  margin-bottom: 30px;
+  
 }
 .hero-button{
   min-width: 200px;
@@ -150,12 +177,30 @@ margin: 0 auto;
 }
 
 /* Проекты*/
-.project-list{
+.hidden-title {
+  visibility: hidden;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.project-list {
   list-style: none;
   display: flex;
   
+  margin-top: 0;
+  margin-bottom: 0;
+
   outline: 1px solid blue;
 }
+/*.project-item {
+  min-width: 270px;
+}
+
+.project-item:not(:last-child) {
+  margin-right: 30px;
+}*/
+/*.project-list:not(:last-child) {
+
+}*/
 .project-title {
   font-weight: 700;
   font-size: 14px;
@@ -176,20 +221,27 @@ margin: 0 auto;
 /* Карточки проектов*/
 .project-cards-title,
 .command-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  margin-bottom: 50px;
+  
 
   outline: 1px solid yellow;
 }
 .project-cards-list{
+  margin-top: 0;
+  margin-bottom: 0;
+ 
   list-style: none;
   display: flex;
   outline: 1px solid blue;
   }
-
+.project-cards-item:not(:first-child){
+margin-left: 30px;
+}
 /*Команда*/
 .command {
   background-color: #F5F4FA;
@@ -225,7 +277,19 @@ margin: 0 auto;
 
   outline: 1px solid yellow;
 }
+.logo-footer {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
 
+  font-family: 'Raleway',
+    sans-serif;
+  color: var(--white-color);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
 
 /*Адрес*/
 .footer-list{
@@ -252,6 +316,7 @@ margin: 0 auto;
 }
 
 /*Портфолио*/
+
 .link.portfolio {
   color: var(--blue-color);
 }
@@ -292,7 +357,25 @@ margin: 0 auto;
 
 /* Проекты портфолио*/
 .portfolio-project-list{
+  display: flex;
+  flex-wrap: wrap;
+
   list-style: none;
+  
+  padding-left: 0;
+}
+
+.portfolio-containers {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 370px;
+   
+  
+}
+
+.portfolio-project-list:nth-child(3n) {
+  margin-right: 0;
+    
 }
 .portfolio-project-link{
   text-decoration: none;
